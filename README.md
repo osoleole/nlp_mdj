@@ -1,6 +1,6 @@
 # nlp_mdj
 
-In my opinion, the best way to perseive the result of similarity measure ia to use heatmaps (measure from 0 to 1, 1 is max).
+In my opinion, the best way to perseive the result of similarity measure is to use heatmaps (measure from 0 to 1, 1 is max).
 These are just some preliminary results just to show the progress. The whole doc is to follow.
 The model used is a **BERT** wraped in Spacy for easier workflow. Model isn't finetuned on the data(at the moment it doesn't make sense).
 
