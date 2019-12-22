@@ -1,5 +1,11 @@
 # nlp_mdj
 
+## Question answering testing
+
+Question answering is the downstream task in NLP. The model is trained to be able to find answer to the questions wrt. the given context. The QuA is extremly difficult task and requires some "understanding" (in some sense it resembles Turing test).
+
+[QuA test results](https://github.com/osoleole/nlp_mdj/blob/master/QuA_test.md)
+
 The best way to perseive the result of similarity measure is to use heatmaps (measure from 0 to 1, 1 is max).
 These are some preliminary results just to show the progress. The whole doc is to follow.
 The model used is a **BERT** wraped in Spacy for easier workflow. Model isn't finetuned on the data(at the moment it doesn't make sense).
