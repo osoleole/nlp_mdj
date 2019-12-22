@@ -221,14 +221,7 @@ It doesn't mean at all that the model knows the physics. All it can do, is just 
 The model is trainable, and we can train it using all available cources material.
 
 I offer the following architecture of semantic question-answer matching.
-
-<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/QA_model.png" width="800">
-
-Pic.1 Data flow in semantic question-answer matching
-
-The core idea is to use for matching not only student's answer and predefined answers, but also **QuA model's** answer. Such wise, we will not only increase the performance of the matching model, but what is more important, we include the core model in the whole education process. Being able to answer questions the model has a chance to become an (machine intelligence) MI professor. material.
-
-I offer the following architecture of semantic question-answer matching.
+The core idea is to use for semantic matching not only student's answer and predefined answers, but also **QuA model's** answer. Such wise, we will not only increase the performance of the matching model, but what is more important, we include the core model in the whole education process. Being able to answer questions the model has a chance to become an (machine intelligence) MI professor. material.
 
 <img src="https://github.com/osoleole/nlp_mdj/blob/master/img/QA_model.png" width="800">
 
