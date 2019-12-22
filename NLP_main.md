@@ -2,6 +2,52 @@
 
 This document presents some thoughts, tests, experiments and conseptual vision on using NLP as a service for organisation tasks.
 
+## Text embeddings
+
+<p style='color:#3d2002'>This paragraph aims to show some very important subtletes of text embedding machinery. Especially the differences between the old fashioned static (context independent) embedding known as <b>word2vec</b> and new one known as <b>transformer architecture</b>, that takes context into account.</p>
+
+The human language is the highly context dependable stream of information. The semantic(meaning) of the words and phrases depends on the prevoius words and phrases.
+
+Let's consider this simple textbook example - **"Apple shares rose on the news. Apple pie is delicious."**
+Any adult human easily catches the meaning of these two phrases. The first one is about financial market and company. The second one is about fruits and cooking. Speaking in the terms of semanic distances thy should be fart apart of each others, even though they contain similar words.
+
+### Static word2vec model
+Let's see the vector distance of the two words **"Apple"** in different contexts as it represented by static word2vec model **"en_core_web_lg"** (size - 768M). 
+
+```python
+print_cossim(doc_st1[0], doc_st1[7])
+```
+```
+Similarity as a cosine distance. 1 is maximum
+==================================================================================
+Similarity of first [Apple] and first [Apple] is 1.0
+Similarity of first [Apple] and second [Apple] is 1.0
+Spacy Similarity of first [Apple] and second [Apple] is 1.0
+```
+As we see the model dosen't see any difference betwee the first **"Apple"** as a company and between the second **"Apple"** as a fruit. All have similarity equal to **1.0**. The model isn't able to catch the meaning of the words in different context at all. "Spacy Similarity" is given here, because "Spacy" has an internal function to measure similarity, and as we see, it coincides with cosine similarity. 
+
+### Transformer based model
+
+Transformer based models (BERT, XLN, GPT-2, etc) is the DNNs and they just appeared this year and made a big advance of NLP industry.
+What is important for us it is not static, it embeds text, taking into account the context by the means of memory attention machinery.
+Now, let's see the result of distance mesauring between two **Apples** with **transformer** model **"en_trf_bertbaseuncased_lg"** (405.8MB)
+```python
+print_cossim(doc_tr1[0], doc_tr1[7])
+```
+```
+Similarity as a cosine distance. 1 is maximum
+==================================================================================
+Similarity of first [Apple] and first [Apple] is 1.0
+Similarity of first [Apple] and second [Apple] is 0.5040999054908752
+Spacy Similarity of first [Apple] and second [Apple] is 0.5040997862815857
+```
+Here we see that the model calculated the similarity between **"Apple"** company and **Apple** company as equal to **1.0** (maximum). But the similarity betwee **Apple** as a company and **Apple** as a fruit is much lower, just  **0.504**. That seems pretty reasonable for the particular case.
+
+Below is a heat map of words pairwise distances/similarity of sentence **"Apple shares rose on the news. Apple pie is delicious."**
+As we can easily see the second(frutty) **Apple** makes a light stripe through all the first sentence. It means it has little in common with **Apple** company and economics. In additon we can see that two senteces forms the dark color clusters that helps us to see they have different meanings.   
+
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Apples_similarity.png" width="800">
+
 ##  Challenges in NLP and possible solutions
 
 Despite the recent achivements in NLP, many unsolved problems exist today that require almost human level reasoning. Let's concider the simple task, that any educated human is able to resolve without problem.
@@ -27,6 +73,17 @@ For example, if the model before trying to match all possible options, tries to 
 
 This is the question answering test of the new transformer model. It's trained on the publically available QuA dataset and isn't tuned for any particular task. Nevertheless, for some context-questions pairs it works amazingly good.
 To play with the model go to [Colab](https://colab.research.google.com/drive/1GjgtpQVXLI7bA2OM5zndkZNgNrLNbZp-#scrollTo=JRm8XSAQ31Cn)
+
+Here are some copy-pasted test results from the Colab.
+The context-questions pairs were choosen by me from the Wiki by chance just to be interesting and reasonably hard.
+
+##### In the output logs 
+* answer - the answer text
+* start - starting position of the probable answer text in the context
+* end - ending position of the probable answer in the context
+* score - the confidence level of the answer
+
+
 There are **transformer** based tools that allow to find answers in the given context. Let's make some experiments.
 We need a newest **transformer==2.3.0**
 
