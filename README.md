@@ -1,7 +1,7 @@
 # nlp_mdj
 
 The best way to perseive the result of similarity measure is to use heatmaps (measure from 0 to 1, 1 is max).
-These are just some preliminary results just to show the progress. The whole doc is to follow.
+These are some preliminary results just to show the progress. The whole doc is to follow.
 The model used is a **BERT** wraped in Spacy for easier workflow. Model isn't finetuned on the data(at the moment it doesn't make sense).
 
 Some results are good. Some are not so good (but i understand why). Some are strange. Sometimes seems model knows about inversion of meanings (as in Row27_2_Unique_ans bottom). 
