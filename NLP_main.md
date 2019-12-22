@@ -1,5 +1,11 @@
 # NLP
 
+## Contents
+* [Text embedding](#text-embeddings)
+* [Course_429 experiments](#course-429)
+* [Challenges in NLP and possible solutions](#challenges-in-nlp-and-possible-solutions)
+* [NLP as service in production](#nlp-as-service-in-production)
+
 This document presents some thoughts, tests, experiments and conseptual vision on using NLP as a service for organisation tasks.
 
 ## Text embeddings
@@ -48,7 +54,24 @@ As we can easily see the second(frutty) **Apple** makes a light stripe through a
 
 <img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Apples_similarity.png" width="800">
 
-##  Challenges in NLP and possible solutions
+## Course 429
+
+Here we try to test how the pretraind transformer model **BERT** works on the simple task of semantic similarity finding. For testing we use data from **Course_429** file.
+
+Below are some results of inter-phrase similarities in the form of heat-map. Similarity is measured on the scale from 0 to 1 where 1 means the maximum similarity.
+
+##### Format
+Pictures are annotated below
+
+* Row_17_1_1.png
+* Row - is the row of table in initial file
+* Numbers - 1 Response 1 Responses
+
+### Example 1
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row17_2_2.png">
+
+
+## Challenges in NLP and possible solutions
 
 Despite the recent achivements in NLP, many unsolved problems exist today that require almost human level reasoning. Let's concider the simple task, that any educated human is able to resolve without problem.
 
