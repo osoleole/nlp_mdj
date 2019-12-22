@@ -73,6 +73,42 @@ Pictures are annotated below
 #### Example 2
 <img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row17_4_4.png">
 
+#### Example 3
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row18_2_2.png">
+
+#### Example 4
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row25_1_1.png">
+
+#### Example 5
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row27_2_Unique_ans.png">
+
+#### Example 6
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row27_5_5.png">
+
+#### Example 7
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row3_2_4.png">
+
+Here we see that "It's easy to buy them" and  "It's easy to buy them" requires additional context. Both sentences have the common meaning - it is just a deal (in this sense they are similar). When one man sells another man buys. But as a fact of the final objective they are opposite and should a low similarity.
+
+#### Example 8
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row3_2_Uniq_ans.png">
+
+#### Example 9
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row19_4_4.png">
+
+#### Example 10
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row10_1_5.png">
+
+#### Example 11
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row17_5_5.png">
+
+#### Example 12
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row10_1_4.png">
+
+
+
+
+
 ## Challenges in NLP and possible solutions
 
 Despite the recent achivements in NLP, many unsolved problems exist today that require almost human level reasoning. Let's concider the simple task, that any educated human is able to resolve without problem.
