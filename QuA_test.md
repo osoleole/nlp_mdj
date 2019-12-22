@@ -72,4 +72,4 @@ Answer is: gravitational attraction of the original gaseous matter present in th
  'score': 0.21979344196318973,
  'start': 4}
 ```
-
+As you can see, the model coped with the task well enough.
