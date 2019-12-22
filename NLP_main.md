@@ -1,6 +1,8 @@
 # NLP
 
 This document presents some thoughts, tests, experiments and conseptual vision on using NLP as a service for organisation tasks.
+The latest working version can be found here [Colab](https://colab.research.google.com/drive/1RfXxTeZZk36UiKr04KfPXLaz07Grjk6x#scrollTo=76LHHa3puRZ-)
+
 
 ## Contents
 * [Text embedding](#text-embeddings)
