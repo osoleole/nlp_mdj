@@ -5,7 +5,15 @@ any particular task. Nevertheless, for some context-questions pairs it works ama
 To play with the model go to [Colab](https://colab.research.google.com/drive/1GjgtpQVXLI7bA2OM5zndkZNgNrLNbZp-#scrollTo=JRm8XSAQ31Cn)
 
 Here are some copy-pasted test results from the Colab.
-The context-questions pairs were choosen by me from the Wiki, just to be interesting and reasonably hard.
+The context-questions pairs were choosen by me from the Wiki by chance just to be interesting and reasonably hard.
+
+##### In the output logs 
+* answer - the answer text
+* start - starting position of the probable answer text in the context
+* end - ending position of the probable answer in the context
+* score - the confidence level of the answer
+
+
 
 #### Test 1
 ```
