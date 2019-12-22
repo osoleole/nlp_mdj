@@ -67,9 +67,11 @@ Pictures are annotated below
 * Row - is the row of table in initial file
 * Numbers - 1 Response 1 Responses
 
-### Example 1
+#### Example 1
 <img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row17_2_2.png">
 
+#### Example 2
+<img src="https://github.com/osoleole/nlp_mdj/blob/master/img/Row17_4_4.png">
 
 ## Challenges in NLP and possible solutions
 
