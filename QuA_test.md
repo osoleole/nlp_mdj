@@ -1,7 +1,6 @@
 ## Results of QuA test
 
-This is the question answering test of the new transformer model. It's trained on the available dataset and isn't tuned for
-any particular task. Nevertheless, for some context-questions pairs it works amazingly good.
+This is the question answering test of the new transformer model. It's trained on the publically available dataset and isn't tuned for any particular task. Nevertheless, for some context-questions pairs it works amazingly good.
 To play with the model go to [Colab](https://colab.research.google.com/drive/1GjgtpQVXLI7bA2OM5zndkZNgNrLNbZp-#scrollTo=JRm8XSAQ31Cn)
 
 Here are some copy-pasted test results from the Colab.
