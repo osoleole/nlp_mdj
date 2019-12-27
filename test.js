@@ -14,7 +14,7 @@ circles.enter()
     .attr("cx", function (d, i) {return x(i);})
     .attr("cy", height / 2)
     .attr("r", 20)
-    .style("fill", "#1f77b4")
+    .style("fill", color)
     .style("opacity", 0.7)
     .on('mouseover', function() {
           d3.select(this)
