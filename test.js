@@ -19,14 +19,14 @@ circles.enter()
     .on('mouseover', function() {
           d3.select(this)
             .interrupt('fade')
-            .style('fill', color)
+            .style('fill', colorActive)
             .style("opacity", 1)
             .attr("r", function (d) {return 1.1 * d + 10;});
       })
       .on('mouseout', function() {
           d3.select(this)
               .transition('fade').duration(500)
-              .style("fill", colorActive)
+              .style("fill", color)
               .style("opacity", 0.7)
               .attr("r", function (d) {return d;});
       })
